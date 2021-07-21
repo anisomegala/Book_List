@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1a02a2bc97.js" crossorigin="anonymous"></script>
+    <title>Book List App</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-primary text-center mb-4">Book List
+        <i class="fas fa-book-open"></i></h1>
+        <form action="" id="book-form">
+            <div class="form-group">
+                <label for="title" class="my-2">Title</label>
+                <input type="text" name="" id="title" class="form-control form-control-sm">
+            </div>
+            <div class="form-group" class='form'>
+                <label for="author" class="my-2">Author</label>
+                <input type="text" name="" id="author" class="form-control form-control-sm">
+            </div>
+            <div class="form-group">
+                <label for="title" class="my-2">ISBN#</label>
+                <input type="text" name="" id="isbn" class="form-control form-control-sm">
+            </div>
+            <input type="submit" name="" value="Add Book" id="" class="btn btn-primary btn-block my-3">
+        </form>
+        <table class="table table-striped" id="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+                <tbody id="book-list"></tbody>
+            </thead>
+        </table>
+
+    </div>
+    
+
+    <script src="app.books.js"></script>
+</body>
+</html>
